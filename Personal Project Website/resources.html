@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>A Meaningful Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/x-icon" href="./Favicon.png"> <!--60px auf 60px-->
+    <style>
+        .statistics-group {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .statistics {
+            flex: 1 1 calc(25% - 20px);
+            max-width: 25%;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        .stats-img iframe,
+        .stats-img img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .stats-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .stats-img {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stats-img:hover .stats-overlay {
+            opacity: 1;
+        }
+
+        .stats-overlay button {
+            background-color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <button type="submit"><i class="fa fa-search"></i></button>
+        <input type="text" placeholder="Search..">
+    </div>
+    <header>
+        <img src="Images for website/Home/pixelcut-export.png" alt="Snow" style="width:100%;">
+        <div class="centered">
+            <h1>Mindful Scroll</h1>
+        </div>
+    </header>
+
+    <div class="btn-group" style="width:100%">
+        <button onclick="window.location.href='./index.html';" style="width:20%">ADDICTION</button>
+        <button onclick="window.location.href='./self-image.html';" style="width:20%">SELF IMAGE</button>
+        <button onclick="window.location.href='./depression.html';" style="width:20%">DEPRESSION & ANXIETY</button>
+        <button onclick="window.location.href='./interviews.html';" style="width:20%">INTERVIEWS</button>
+        <button class="active" onclick="window.location.href='./resources.html';" style="width:20%">RESOURCES</button>
+    </div>
+
+    <div class="statistics-group">
+        <div class="statistics">
+            <div class="stats-img">
+                <iframe src="https://www.youtube.com/embed/4TMPXK9tw5U?si=xI7B4ag52b1skGmT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        
+            </div>
+            <p>Dino Ambrosi is a digital wellness advocate and the founder of Project Reboot, an initiative dedicated to helping students develop healthier relationships with technology.</p>
+            <p>In addition to speaking engagements, Ambrosi collaborates with educational institutions to implement programs that promote digital well-being. His approach focuses on reshaping mindsets, redesigning environments, and establishing healthier tech habits among students.</p>
+        </div>
+
+        <div class="statistics">
+            <div class="stats-img">
+                <img src="Images for website/Screenshot 2024-12-30 at 16.52.14.png" alt="Opal">
+                <div class="stats-overlay">
+                    <button onclick="window.location.href='https://www.opal.so/'">Opal</button>
+                </div>
+            </div>
+            <p>Opal is a screen time management app designed to help users reduce distractions and enhance focus by limiting access to selected apps and websites.</p>
+            <p>Key features of Opal include:</p>
+
+               <P> Block Sessions: Users can schedule specific times to block selected apps, games, or websites. 
+                OPAL</P>
+                
+                <p>Focus Score®: Opal provides a real-time assessment of a user's focus level throughout the day. 
+                    OPAL</p>
+                
+                <p>App Limits and App Lock: These features allow users to set daily usage limits on specific apps and create semi-permanent locks. </p>
+                
+       
+        </div>
+
+        <div class="statistics">
+            <div class="stats-img">
+                <img src="Images for website/Screenshot 2024-12-30 at 17.00.41.png" alt="One Sec">
+                <div class="stats-overlay">
+                    <button onclick="window.location.href='https://one-sec.app/'">one sec</button>
+                </div>
+            </div>
+            <p>One Sec is a screen time management app designed to help users reduce impulsive social media usage by introducing a brief pause before opening selected apps or websites.</p>
+            <p></p>
+        </div>
+
+        <div class="statistics">
+            <div class="stats-img">
+                <img src="Images for website/Screenshot 2024-12-30 at 17.03.22.png" alt="Mental Health Hub">
+                <div class="stats-overlay">
+                    <button onclick="window.location.href='https://www.thementalhealthhub.org/social-media'">The Mental Health Hub</button>
+                </div>
+            </div>
+            <p>Help within Instagram: The Trevor Project has published a great pamphlet on how to make your Instagram a positive experience.</p>
+            <p>Breaking Taboo: @breakingtaboo Mental Health Awareness and Suicide Prevention</p>
+            <p>Mental Health awareness: @melaninandmentalhealth</p>
+            <p>The Steve Fund: @thestevefund - Mental Health Awareness nonprofit run page for people of color</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h2>✰✰✰</h2>
+    </div>
+</body>
+
+</html>

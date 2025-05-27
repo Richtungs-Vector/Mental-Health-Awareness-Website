@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Sedan|Merriweather');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #903367;
+    margin: 0%;
+    font-family: "Merriweather";
+    color: white;
+}
+
+h1 {
+    color: #f5bcd3ff;
+    text-align: center;
+    font-family: "Sedan";
+}
+
+p {
+    font-size: 16px;
+}
+
+.header {
+    position: relative;
+}
+
+.centered {
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    background: rgba(200, 128, 140, 0.9);
+    width: 80%;
+
+}
+
+.post {
+    padding: 50px 100px 50px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.post-image {
+    text-align: center;
+    flex: 33%;
+    padding: 20px;
+}
+
+.post-text {
+    float: right;
+    flex: 66%;
+    padding: 20px;
+}
+
+
+.zitat {
+    /*background-color: #C8808C;*/
+    padding: 20px 20px 20px;
+    text-align: center;
+}
+
+.btn-group button {
+    background-color: #C8808C;
+    /* Green background */
+    border: 1px solid white;
+    /* Green border */
+    color: #fefbf9ff;
+    /* White text */
+    padding: 10px 24px;
+    /* Some padding */
+    cursor: pointer;
+    /* Pointer/hand icon */
+    float: left;
+    /* Float the buttons side by side */
+    font-size: larger;
+    font-family: "Merriweather";
+    
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none;
+    /* Prevent double borders */
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: #C8808C;
+}
+
+.btn-group button.active {
+    background-color: #a35c68;
+
+    color: white;
+}
+
+.statistics {
+    float: left;
+}
+
+.statistics p {
+    overflow-x: hidden;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.statistics-group {
+    padding: 25px 25px 25px;
+}
+
+.statistics-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.stats-img {
+    display: block;
+    position: relative;
+}
+
+.top {
+    overflow: hidden;
+    background-color: #C8808C;
+    padding: 14px 16px;
+}
+
+.top button {
+    float: right;
+    padding: 6px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.top button:hover {
+    background: #ccc;
+}
+
+/* Style the search box inside the navigation bar */
+.top input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    font-size: 17px;
+}
+
+.footer {
+    padding: 20px;
+    /* Some padding */
+    text-align: center;
+    /* Center text*/
+    background: #C8808C;
+    /* Grey background */
+}
+
+
+some color {
+    hell: #fefbf9ff;
+    font2: #fbe4efff;
+    font3: #f7cddfff;
+    font4: #f5bcd3ff;
+
+
+    hell: #C8808C;
+    dunkel: #903367;
+}
